@@ -130,7 +130,7 @@ This is where marketing brochures put on a cape. The real question is not just *
 | Best if you already own lots of Informatica | **Informatica** | Reuse of skills, architecture patterns, and adjacent capabilities matters a lot |
 | Best if business governance maturity is the real goal | **Collibra** | It forces the hard conversations instead of hiding them under a shiny search bar |
 
-## 7) Recommendation logic for a Rio-scale hybrid environment
+## 7) Recommendation logic for a enterprise-scale hybrid environment
 
 For a **large hybrid estate** with on-prem databases, cloud lakehouse, BI tools, enterprise apps, and likely some industrial/OT nastiness:
 
@@ -140,7 +140,7 @@ For a **large hybrid estate** with on-prem databases, cloud lakehouse, BI tools,
 | Metadata/discovery-first program where adoption and visible early wins matter most | **Alation** |
 | Integration-heavy architecture already centered on Informatica or needing strong metadata + DQ + lineage convergence | **Informatica** |
 
-### My blunt take
+### Recomendations
 
 - **Alation**: best when you want the catalog to actually get used before the heat death of the universe.
 - **Collibra**: best when governance is not a side quest but the actual game.
@@ -160,21 +160,3 @@ For a **large hybrid estate** with on-prem databases, cloud lakehouse, BI tools,
 | Best business-user friendliness | **Alation** |
 | Best for formal stewardship workflows | **Collibra** |
 
-## 9) What I would do in an actual selection
-
-Run a weighted scorecard across these 8 areas:
-
-| Criterion | Suggested weight |
-|---|---|
-| Priority connectors in your estate | 20% |
-| Lineage depth for those connectors | 15% |
-| Governance workflow / stewardship fit | 15% |
-| Time to MVP | 10% |
-| Operating overhead | 10% |
-| Business adoption / UX | 10% |
-| Security / deployment fit | 10% |
-| Partner dependency / implementation risk | 10% |
-
-For your kind of environment, the dangerous trap is choosing on **demo gloss** instead of **connector proof, lineage proof, and operating model proof**. A catalog that can beautifully index easy systems while choking on the weird ones is just an expensive museum.
-
-When the browse layer behaves again, the next useful step is a **source-cited RFP scorecard** tailored to your exact estate: Databricks, SQL Server, Power BI, SAP/custom ERP, OT historians, file shares, and any Palantir-shaped weirdness.
